@@ -1,5 +1,26 @@
 #--------------------------------------------------------------------------------------------------------------
-# 
+# Is it Fibonacci
+class Solution():
+    def solve(self, N, K, GeekNum):
+        
+        n= abs( len(GeekNum)-N )
+
+        while n>0:
+
+            ans=0
+            arr=GeekNum[::-1]
+
+            for i  in range(K):
+                ans+=arr[i]
+            
+            GeekNum.append(ans)
+            GeekNum.pop(0)
+            n-=1
+
+        if len(GeekNum)==K:
+            return GeekNum[-1]
+
+        return GeekNum[-1]
 
 # -------------------------------------------------------------------------------------------------------------
 # Repeated Character
