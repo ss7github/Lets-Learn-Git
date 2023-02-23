@@ -6,6 +6,45 @@ using namespace std;
 int main() {
 	int t;
 	cin>>t;
+	while (t--){
+	    int n,k;
+	    cin>>n>>k;
+	    int a[n];
+	    for(int i=0; i<n; i++) cin>>a[i];
+	    
+	    int count=0;
+	    
+	    sort(a,a+n);
+	    
+	    for(int i=0; i<n; i++){
+	        if(k >= a[i]){
+	            k = k-a[i];
+	            count++;
+	        }
+	        else{
+	            if(k>=(a[i]+1)/2){
+	                count++;
+	                break;
+	            }
+	        }
+	    }
+	    cout << count << endl;
+	}
+	return 0;
+}
+/*
+Suppose k=3 and a[i] is 7. If we do k>=a[i]/2, 
+it will return true as since the values are integers, 
+a[i]/2 = 3 and not 3.5 as it should. 
+Hence, we add 1 to a[i] before dividing so that we get 4 in the above example and it returns false.
+*/
+//------------------------------------------------------------------
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int t;
+	cin>>t;
 	while(t--){
 	    int n,k;
 	    cin>>n>>k;
