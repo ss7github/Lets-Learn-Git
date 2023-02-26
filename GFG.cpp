@@ -1,4 +1,24 @@
 //------------------------------------------------------------------
+//inorder traversal
+class Solution {
+  public:
+  vector<int>v;
+    // Function to return a list containing the inorder traversal of the tree.
+    vector<int> inOrder(Node* root) {
+        // Your code here
+        if(root!=NULL){
+
+            inOrder(root->left);
+
+            v.push_back(root->data);
+
+            inOrder(root->right);
+
+        }
+        return v;
+    }
+};
+//----------------------
 // sort
 vector<int> sortArr(vector<int>arr, int n){
     vector<int>v=arr;
