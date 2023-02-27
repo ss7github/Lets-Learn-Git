@@ -1,5 +1,16 @@
 #--------------------------------------------------------------------------------------------------------------
 # 
+def strstr(s,x):
+    # check if string x in string s
+
+    if x in s :
+
+        return s.find(x) #It returns the index of the position of x in s
+
+    else:
+
+        return -1
+
 
 #--------------------------------------------------------------------------------------------------------------
 # 2 Arrays Equal or Not
