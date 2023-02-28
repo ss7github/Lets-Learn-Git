@@ -1,5 +1,6 @@
 //-----------------------------------------------------------------------------------
 //boilerplate
+//1
 int t;
 	cin>>t;
 	while(t--){
@@ -10,7 +11,28 @@ int t;
 	        cin>>a[i];
 	    }
 	}
-//
+//2
+int t;
+	cin>>t;
+	while(t--){
+	    int n,s;
+	    cin>>n>>s;
+	    char a[n];
+	    for(int i=0; i<n; i++){
+	        cin>>a[i];
+	    }
+	}
+//3
+int t;
+	cin>>t;
+	while(t--){
+	    int x,y;
+	    cin>>x>>y;
+        
+        if ((x+y)>6) cout<<"YES";
+        else cout<<"NO";
+	}
+//-----------------------
 #include <bits/stdc++.h>
 using namespace std;
 
