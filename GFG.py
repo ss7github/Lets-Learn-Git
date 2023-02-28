@@ -1,4 +1,36 @@
 #--------------------------------------------------------------------------------------------------------------
+#
+class Solution:
+    def minDist(self, arr, n, x, y):
+        mind=10**5
+
+        a,b=-1,-1
+
+        if x==y:
+
+            return 0
+
+        for i in range(n):
+
+            if arr[i]==x:
+
+                a=i
+
+            if arr[i]==y:
+
+                b=i
+
+            if a!=-1 and b!=-1:
+
+                mind= min(mind,abs(a-b))
+
+        
+
+        if x not in arr or y not in arr:
+
+            return -1
+
+        return mind
 # 
 def strstr(s,x):
     # check if string x in string s
