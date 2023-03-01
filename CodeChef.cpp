@@ -1,6 +1,6 @@
 //-----------------------------------------------------------------------------------
 //boilerplate
-//1
+//1 --- Array problems
 int t;
 	cin>>t;
 	while(t--){
@@ -11,7 +11,7 @@ int t;
 	        cin>>a[i];
 	    }
 	}
-//2
+//2 --- String problems
 int t;
 	cin>>t;
 	while(t--){
@@ -21,16 +21,6 @@ int t;
 	    for(int i=0; i<n; i++){
 	        cin>>a[i];
 	    }
-	}
-//3
-int t;
-	cin>>t;
-	while(t--){
-	    int x,y;
-	    cin>>x>>y;
-        
-        if ((x+y)>6) cout<<"YES";
-        else cout<<"NO";
 	}
 //-----------------------
 #include <bits/stdc++.h>
