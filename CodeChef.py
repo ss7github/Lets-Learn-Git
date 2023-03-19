@@ -11,7 +11,7 @@
 #-----------------------------
 
 #-----------------------------
-# cook your dish here
+# Codechef Problem
 T = int(input())
 for i in range(T):
     A,B,A1,B1,A2,B2=map(int,input().split())
@@ -21,3 +21,4 @@ for i in range(T):
         print("2")
     else:
         print("0")
+#-----------------------------
